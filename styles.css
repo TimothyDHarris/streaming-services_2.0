@@ -1,33 +1,73 @@
 ul {
   list-style-type: none;
   text-align: center;
+  display: inline;
 }
 
 .streaming-div {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  box-shadow: -3px 3px 3px gray;
 }
 
-.streaming-box {
+.streaming-container {
   margin-top: 2em;
   margin-bottom: 3em;
+  padding-left: 8em;
+  padding-right: 8em;
 }
 
 p {
   margin-bottom: 2em;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image-class {
+  padding-left: 1em;
+  /* padding-right: 1.5em; */
+}
+
+#netflix-ul {
+  padding-left: 25px;
+}
+
+#hulu-trial-ul {
+  padding-left: 25px;
+}
+
+@media (max-width: 1150px) {
+  .streaming-container {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .image-class {
+    padding-left: 1em;
+  }
+  #netflix-ul {
+    padding-left: 1em;
+  }
+  #hulu-trial-ul {
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 860px) {
   .streaming-div {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
     flex-flow: column;
-    margin-left: 0px;
+    margin-left: -1px;
     margin-right: 0px;
-    padding: 0px;
+    padding-left: -1px;
+    padding-right: 0px;
+    font-size: 18px;
   }
   ul {
     display: inline;
@@ -37,12 +77,17 @@ p {
   p {
     margin-left: 5em;
     margin-right: 5em;
-  }
-  /* .streaming-div {
-    outline: double; */
+    text-align: center;
   }
   img {
-    size: 20%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .streaming-container {
+    padding-left: 1px;
+    padding-right: 0px;
+    margin-left: 1px;
+    margin-right: 0px;
   }
 }
 
