@@ -1,3 +1,9 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #007bff;
+}
+
 ul {
   list-style-type: none;
   text-align: center;
@@ -9,7 +15,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: -3px 3px 3px gray;
+  box-shadow: -3px 3px 3px #343a40;
+  margin-bottom: 0.5em;
+  background-color: #f8f9fa;
 }
 
 .streaming-container {
@@ -22,23 +30,36 @@ ul {
 p {
   margin-bottom: 2em;
   text-align: center;
+  color: #f8f9fa;
 }
 
 h1 {
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  color: #f8f9fa;
 }
 
 .image-class {
   padding-left: 1em;
-  /* padding-right: 1.5em; */
+}
+
+.white-link {
+  color: #f8f9fa;
 }
 
 #netflix-ul {
   padding-left: 25px;
 }
-
 #hulu-trial-ul {
   padding-left: 25px;
+}
+
+.comercial-free-ul {
+  list-style-type: none;
+  text-align: center;
+  display: inline;
+  padding-right: 20px;
 }
 
 @media (max-width: 1150px) {
@@ -50,7 +71,7 @@ h1 {
     padding-left: 1em;
   }
   #netflix-ul {
-    padding-left: 1em;
+    padding-left: 1.5em;
   }
   #hulu-trial-ul {
     padding-left: 30px;
@@ -63,35 +84,77 @@ h1 {
     flex-wrap: wrap;
     text-align: left;
     flex-flow: column;
-    margin-left: -1px;
-    margin-right: 0px;
-    padding-left: -1px;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-left: 0px;
     padding-right: 0px;
     font-size: 18px;
   }
   ul {
-    display: inline;
-    width: 100%;
-    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   p {
     margin-left: 5em;
     margin-right: 5em;
     text-align: center;
   }
-  img {
-    margin-left: 0;
-    margin-right: 0;
+  .image-li {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .image-class {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .streaming-container {
-    padding-left: 1px;
-    padding-right: 0px;
-    margin-left: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
     margin-right: 0px;
+  }
+  .comercial-free-ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    padding-right: 0px;
+  }
+  h1 {
+    border-right: 5px;
+    border-left: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #netflix-ul {
+    padding-left: 0px;
+  }
+  #hulu-trial-ul {
+    padding-left: 0px;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
   }
 }
 
-body {
-  text-align: center;
-  margin: 0 auto;
+@media (max-width: 530px) {
+  .streaming-div {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-flow: column;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+  }
 }
