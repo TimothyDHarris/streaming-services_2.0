@@ -21,7 +21,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: -3px 3px 3px #343a40;
+  box-shadow: -3px 5px 5px #343a40;
   margin-bottom: 0.5em;
   background-color: #f8f9fa;
 }
@@ -41,7 +41,7 @@ p {
 
 h1 {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 20px;
   color: #f8f9fa;
   font-family: Merriweather;
